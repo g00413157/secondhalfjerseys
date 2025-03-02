@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+
+/* HEADER */
+.header {
+    font-family: "Bebas Neue", serif;
+    display: flex;
+    justify-content: space-between; /* Ensures proper spacing */
+    align-items: center;
+    background-color: black; /* Solid background */
+    padding: 15px 5%;
+    
+    flex-wrap: wrap; /* Ensures content wraps properly on smaller screens */
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+   
+}
+
+.header a:hover {
+    color: #007BFF;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+   justify-content: space-between; /* Ensures proper spacing */
+   align-items:center;
+}
+
+.nav-links a {
+      margin: 0 30px;
+    font-size: 24px; /* Increased font size */
+}
+
+/* LOGO */
+.logo img {
+    height: 120px; /* Adjusted for responsiveness */
+    max-width: 100%;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000; /* Solid background */
+    color: white;
+    padding: 30px 5%;
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.footer .footer-links,
+.footer .social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-links a,
+.footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    margin-right: 15px; /* Adds spacing between items */
+}
+
+/* Remove margin from the last link to avoid extra spacing */
+.footer .footer-links a:last-child,
+.footer .social-media a:last-child {
+    margin-right: 0;
+}
+
+.footer .footer-links a:hover,
+.footer .social-media a:hover {
+    color: #007BFF;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 3%;
+    }
+
+    .footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .footer-links,
+    .footer .social-media {
+        flex-direction: column;
+    }
+
+    .footer .footer-links a,
+    .footer .social-media a {
+        margin: 8px 0; /* Adds vertical spacing between items */
+    }
+
+    .logo img {
+        height: 80px; /* Adjust logo size on smaller screens */
+    }
+}
+
+/* BUTTON */
+.create {
+    background-color: #ff0000;
+    font-family: "Bebas Neue", serif;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* Adjust width dynamically */
+    min-width: 100px; /* Ensures consistent button size */
+    text-align: center;
+}

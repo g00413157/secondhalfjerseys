@@ -145,3 +145,175 @@ body {
     min-width: 100px; /* Ensures consistent button size */
     text-align: center;
 }
+.jersey-card {
+    background: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.jersey-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+.jersey-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #004080;
+    color: white;
+}
+/* Form Container */
+#contactForm {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Labels */
+.form-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Textarea */
+textarea.form-control {
+    resize: vertical;
+    height: 120px;
+}
+
+/* Submit Button */
+.btn-warning {
+    background: #ffcc00;
+    color: black;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.btn-warning:hover {
+    background: #e6b800;
+}
+
+/* Success/Error Message */
+#result {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+/* Center the product grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Make each product card take equal space */
+.product-card {
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Image container (handles flipping) */
+.image-container {
+    width: 100%;
+    height: 350px; /* Adjust based on your images */
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+/* Front and back images */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Initially, show only the front image */
+.image-container .back-image {
+    opacity: 0;
+}
+
+/* Flip on hover */
+.image-container:hover .image {
+    opacity: 0;
+}
+
+.image-container:hover .back-image {
+    opacity: 1;
+}
+
+/* Ensure text stays clean */
+h3, .description, .price {
+    margin: 10px 0;
+}
+
+.size-badge {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: #0056b3;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #004494;
+}
+

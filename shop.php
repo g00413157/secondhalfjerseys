@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Logo/logo-2.png">
-    <title>Second Half Jerseys</title>
+    <title>Second Half Jerseys | Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
     </style>
     <?php include('header.php'); ?>
   
     <div class="product-grid">
         <section class="shop">
             <br>
-            <h1>Shop Our Jerseys</h1>
+            <h1 class="titles">Shop Our Jerseys</h1>
             <br>
             <div class="product-grid">
                 <?php
@@ -143,7 +144,7 @@
                     </div>
                    <span class="size-badge">Size: ' . $product['size'] . '</span>
                     <p class="description">' . $product['description'] . '</p>
-                    <p class="price">€' . number_format($product['price'], 2) . '</p>
+                    <b><p class="price">€' . number_format($product['price'], 2) . '</b></p>
                     <button class="btn add-to-cart" data-name="' . $product['name'] . '" data-price="' . $product['price'] . '">Add to Cart</button>
                 </div>
             ';

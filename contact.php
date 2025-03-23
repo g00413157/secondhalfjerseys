@@ -12,6 +12,7 @@
 <body>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        
     </style>
     <?php include('header.php'); ?>
 

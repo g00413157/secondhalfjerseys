@@ -12,19 +12,23 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures footer stays at the bottom */
+    min-height: 100vh;
+    /* Ensures footer stays at the bottom */
 }
 
 /* HEADER */
 .header {
     font-family: "Bebas Neue", serif;
     display: flex;
-    justify-content: space-between; /* Ensures proper spacing */
+    justify-content: space-between;
+    /* Ensures proper spacing */
     align-items: center;
-    background-color: black; /* Solid background */
+    background-color: black;
+    /* Solid background */
     padding: 15px 5%;
-    
-    flex-wrap: wrap; /* Ensures content wraps properly on smaller screens */
+
+    flex-wrap: wrap;
+    /* Ensures content wraps properly on smaller screens */
 }
 
 .header a {
@@ -32,7 +36,7 @@ body {
     color: white;
     font-size: 20px;
     transition: color 0.3s ease;
-   
+
 }
 
 .header a:hover {
@@ -42,29 +46,34 @@ body {
 /* Navigation links */
 .nav-links {
     display: flex;
-   justify-content: space-between; /* Ensures proper spacing */
-   align-items:center;
+    justify-content: space-between;
+    /* Ensures proper spacing */
+    align-items: center;
 }
 
 .nav-links a {
-      margin: 0 30px;
-    font-size: 24px; /* Increased font size */
+    margin: 0 30px;
+    font-size: 24px;
+    /* Increased font size */
 }
 
 /* LOGO */
 .logo img {
-    height: 120px; /* Adjusted for responsiveness */
+    height: 120px;
+    /* Adjusted for responsiveness */
     max-width: 100%;
 }
 
 /* FOOTER */
 .footer {
-    background-color: #000; /* Solid background */
+    background-color: #000;
+    /* Solid background */
     color: white;
     padding: 30px 5%;
     text-align: center;
     font-family: "Bebas Neue", serif;
-    margin-top: auto; /* Pushes footer to the bottom */
+    margin-top: auto;
+    /* Pushes footer to the bottom */
 }
 
 .footer .footer-content {
@@ -87,7 +96,8 @@ body {
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
-    margin-right: 15px; /* Adds spacing between items */
+    margin-right: 15px;
+    /* Adds spacing between items */
 }
 
 /* Remove margin from the last link to avoid extra spacing */
@@ -124,11 +134,13 @@ body {
 
     .footer .footer-links a,
     .footer .social-media a {
-        margin: 8px 0; /* Adds vertical spacing between items */
+        margin: 8px 0;
+        /* Adds vertical spacing between items */
     }
 
     .logo img {
-        height: 80px; /* Adjust logo size on smaller screens */
+        height: 80px;
+        /* Adjust logo size on smaller screens */
     }
 }
 
@@ -141,10 +153,13 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: auto; /* Adjust width dynamically */
-    min-width: 100px; /* Ensures consistent button size */
+    width: auto;
+    /* Adjust width dynamically */
+    min-width: 100px;
+    /* Ensures consistent button size */
     text-align: center;
 }
+
 .jersey-card {
     background: white;
     padding: 15px;
@@ -152,16 +167,19 @@ body {
     border-radius: 5px;
     text-align: center;
 }
+
 .jersey-card img {
     width: 200px;
     height: auto;
     border-radius: 5px;
 }
+
 .jersey-grid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -170,12 +188,31 @@ body {
     text-decoration: none;
     border-radius: 5px;
 }
+#btn-create{
+    background-color: #ff0000;
+    font-family: "Bebas Neue", serif;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    /* Adjust width dynamically */
+    min-width: 100px;
+    /* Ensures consistent button size */
+    text-align: center;
+}
+#btn-create:hover{
+    background-color: #8B0000;
+}
+
 .hero {
     text-align: center;
     padding: 50px;
     background: #004080;
     color: white;
 }
+
 /* Form Container */
 #contactForm {
     width: 100%;
@@ -239,6 +276,7 @@ textarea.form-control {
     font-weight: bold;
     color: green;
 }
+
 /* Center the product grid */
 .product-grid {
     display: flex;
@@ -249,7 +287,8 @@ textarea.form-control {
 
 /* Make each product card take equal space */
 .product-card {
-    width: 300px; /* Adjust width as needed */
+    width: 300px;
+    /* Adjust width as needed */
     text-align: center;
     background: #fff;
     padding: 15px;
@@ -261,7 +300,8 @@ textarea.form-control {
 /* Image container (handles flipping) */
 .image-container {
     width: 100%;
-    height: 350px; /* Adjust based on your images */
+    height: 350px;
+    /* Adjust based on your images */
     position: relative;
     overflow: hidden;
     perspective: 1000px;
@@ -293,7 +333,9 @@ textarea.form-control {
 }
 
 /* Ensure text stays clean */
-h3, .description, .price {
+h3,
+.description,
+.price {
     margin: 10px 0;
 }
 
@@ -304,16 +346,228 @@ h3, .description, .price {
     margin-bottom: 10px;
 }
 
-.btn {
-    background: #0056b3;
+
+
+.btn:hover {
+    background: #ffcc01;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#tagline {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+
+}
+.titles{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-size: 60px;
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.cta {
+    background-color: #3498db;
     color: white;
-    padding: 10px;
-    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #2980b9;
+}
+
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns in a row */
+        gap: 20px; /* Adds spacing between cards */
+        padding: 20px;
+        justify-items: center; /* Centers the items horizontally */
+        grid-auto-flow: column; /* Makes sure the items flow horizontally */
+    }
+/* Hero Section */
+.hero {
+    background: #004080; /* Dark blue background for contrast */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #FF5733; /* Bright accent color */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #c13c1f; /* Darken on hover */
+}
+
+/* Featured Section */
+.featured {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.featured h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.featured p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #004080;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta .btn {
+    background-color: #FF5733;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
     border-radius: 5px;
 }
 
-.btn:hover {
-    background: #004494;
+.cta .btn:hover {
+    background-color: #c13c1f;
+}
+form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
 }
 
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ffcc00 ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+input[type="submit"]:hover {
+    background-color:  #BA8E21;
+    
+
+}
+
+        /* Logo Container */
+        .logo-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        /* Static Logo Image */
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Video Logo - hidden by default */
+        .logo-video {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Show the video logo when hovering over the logo container */
+        .logo-container:hover .logo-video {
+            display: block;
+        }
+
+        /* Hide the static image when hovering */
+        .logo-container:hover .logo-img {
+            display: none;
+        }

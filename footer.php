@@ -5,6 +5,7 @@
             <a href="privatepolicy.php">Privacy Policy</a>
             <a href="termsofservice.php">Terms of Service</a>
             <a href="faq.php">FAQ</a>
+            <a href="contact.php">Contact</a> 
         </div>
 
         <div class="social-media">

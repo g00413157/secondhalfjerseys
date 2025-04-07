@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$username = "admin";
+$username = "kwbz5h6_admin";
 $password = "qwertyuio654321";
 $database = "kwbz5h6_secondhalfjerseysdb";
 

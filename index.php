@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <?php include 'db.php'?>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');

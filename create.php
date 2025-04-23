@@ -19,26 +19,26 @@
     <br>
     <h1 class="titles">Create A user</h1>
     <br>
-    <form id="awfc_userForm">
+    <form id="shj_userForm">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" required><br><br>
         <label for="password">Password:</label>
-        <input type="text" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password" required><br><br>
 
         <div id="buttons">
             <label>&nbsp;</label>
             <input type="submit" value="Create User"><br>
         </div>
     </form>
-    <div id="awfc_response"></div>
+    <div id="shj_response"></div>
     <?php include 'footer.php'; ?>
     <script src="JS/secondhalfjerseys.js"></script>
     <script>
  $(document).ready(function(){
         // Fix: Correct ID selector for the form
-        $('#awfc_userForm').on('submit', function(event) {
+        $('#shj_userForm').on('submit', function(event) {
             event.preventDefault();
 
             // AJAX request to the server
@@ -48,10 +48,10 @@
                 data: $(this).serialize(),
                 success: function(response) {
                     // Fix: Correct ID for response element
-                    $('#awfc_response').html(response);
+                    $('#shj_response').html(response);
                 },
                 error: function(xhr, status, error) {
-                    $('#awfc_response').html('Error: ' + error);
+                    $('#shj_response').html('Error: ' + error);
                 }
             });
         });

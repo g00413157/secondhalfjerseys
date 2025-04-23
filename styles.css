@@ -571,3 +571,22 @@ input[type="submit"]:hover {
         .logo-container:hover .logo-img {
             display: none;
         }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 250px;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            margin: 5px 0;
+        }

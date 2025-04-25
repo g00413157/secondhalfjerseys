@@ -34,7 +34,14 @@ $result = mysqli_query($conn, $sql);
             <p><strong>League:</strong> <?php echo $row['league']; ?></p>
             <p><strong>Size:</strong> <?php echo $row['size']; ?></p>
             <p><strong>Price:</strong> €<?php echo $row['price']; ?></p>
-            <button onclick="addToCart(<?php echo $row['product_id']; ?>)">Add to Cart</button>
+            <input 
+              type="hidden" 
+              name="add_to_cart" 
+              value="<?php echo $row['product_id']; ?>"
+            >
+            <button type="submit" class="add-to-cart-btn--clear">
+              Add to Cart
+            </button>
 
             
         </div>

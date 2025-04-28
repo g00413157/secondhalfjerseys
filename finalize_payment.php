@@ -1,32 +1,38 @@
 <?php
-session_start();
-include 'db.php';
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-if (!isset($_SESSION['cart_items']) || empty($_SESSION['cart_items'])) {
-    echo "Error: Cart is empty. Please add items to your cart first.";
-    exit();
-}
+session_start();
+include 'db.php'; 
+
+$session_id = session_id();
 
 if (isset($_POST['submit_payment'])) {
 
-    $card_number = $_POST['card_number'];
-    $expiry_date = $_POST['expiry_date'];
-    $cvv = $_POST['cvv'];
-
-    $card_number = htmlspecialchars($card_number);
-    $expiry_date = htmlspecialchars($expiry_date);
-    $cvv = htmlspecialchars($cvv);
+   
+    $card_number = htmlspecialchars(trim($_POST['card_number']));
+    $expiry_date = htmlspecialchars(trim($_POST['expiry_date']));
+    $cvv = htmlspecialchars(trim($_POST['cvv']));
 
     if (empty($card_number) || empty($expiry_date) || empty($cvv)) {
-        echo "Error: Please fill all the payment details.";
+        echo "Error: Please fill in all payment details.";
         exit();
     }
 
-    try {
+    $stmt = $conn->prepare("DELETE FROM cart WHERE session_id = ?");
+    $stmt->bind_param("s", $session_id);
+
+    if ($stmt->execute()) {
+        
         header("Location: thankyou.php");
         exit();
-    } catch (Exception $e) {
-        echo "Error: " . $e->getMessage();
+    } else {
+        echo "Error: Could not clear cart. Please contact support.";
+        exit();
     }
+
+} else {
+    echo "Error: Invalid access.";
+    exit();
 }
 ?>

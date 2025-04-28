@@ -1,4 +1,4 @@
-<?php include 'db.php'?>
+<?php include 'db.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,20 +18,26 @@
     <?php include 'header.php'; ?>
     <br>
     <h1 class="titles">Login Page</h1>
-    <div class="container">
-        <div class="box" id="login_box">
-            <form id="login_form" onsubmit="loginUser(event)">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required><br>
-                <label for="password">Password:</label>
-                <input type="text" id="password" name="password" required><br> <!-- Updated type -->
-                <div id="buttons">
-                    <input type="submit" value="Login">
-                </div>
-            </form>
-            <div class="box" id="login_response"></div>
-        </div>
+<div class="container">
+    <div class="box" id="login_box">
+        <form method="POST" action="loginProcess.php">
+            <h2 class="form-title">Login</h2>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div id="buttons">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+
+        <div class="box" id="login_response"></div>
     </div>
+</div>
+
     <?php include 'footer.php'; ?>
     <script src="JS/secondhalfjerseys.js"></script>
     <script>

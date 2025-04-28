@@ -1,3 +1,7 @@
+<?php
+session_start();
+include 'db.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,12 +26,10 @@
 
        
 
-        <div class="container">
+        <div class="about-container">
             <section>
-                <h1 class="titles">About Second Half Jerseys</h1>
-                <br>
                 <h2>Our Mission</h2>
-                <p>At <span class="highlight">Second Half Jerseys</span>, we’re all about <span class="highlight">Giving
+                <p>At <span class="about-highlight">Second Half Jerseys</span>, we’re all about <span class="highlight">Giving
                         Jerseys a Second Half</span>. We believe in making football jerseys more accessible,
                     sustainable, and affordable. By offering a curated selection of pre-loved jerseys from both famous
                     clubs and national teams around the globe, we give fans the chance to own a piece of football
@@ -47,15 +49,15 @@
             <section>
                 <h2>Why Choose Us?</h2>
                 <ul>
-                    <li><span class="highlight">Quality & Authenticity</span>: We only sell genuine, high-quality
+                    <li><span class="about-highlight">Quality & Authenticity</span>: We only sell genuine, high-quality
                         jerseys that have been carefully inspected for condition.</li>
-                    <li><span class="highlight">Sustainability</span>: By purchasing second-hand, you're giving these
+                    <li><span class="aboit-highlight">Sustainability</span>: By purchasing second-hand, you're giving these
                         jerseys a second life, reducing waste, and supporting the circular economy.</li>
-                    <li><span class="highlight">Competitive Pricing</span>: Get your hands on classic and rare football
+                    <li><span class="about-highlight">Competitive Pricing</span>: Get your hands on classic and rare football
                         kits without the hefty price tag.</li>
-                    <li><span class="highlight">Based in Galway</span>: We’re proud to serve the local community,
+                    <li><span class="about-highlight">Based in Galway</span>: We’re proud to serve the local community,
                         offering both in-store and online shopping for our Galway customers.</li>
-                    <li><span class="highlight">Passion for Football</span>: We're more than just a store – we're
+                    <li><span class="about-highlight">Passion for Football</span>: We're more than just a store – we're
                         football fans just like you, and we understand the love for a good jersey!</li>
                 </ul>
             </section>
@@ -74,12 +76,12 @@
             <section>
             <h2>Join the Second Half Jerseys Community</h2>
             <a href="https://www.instagram.com">
-        <img src="Icons/insta.png" alt="instagram" style="width110px;height:110px;">
+        <img src="icons/insta.png" alt="instagram" style="width110px;height:110px;">
     </a>  
     
             </section>
             <section class="cta">
-            <h2>Join the Second Half Jerseys Community</h2>
+            <h2  class="ctahead">Join the Second Half Jerseys Community</h2>
             
             <p>Whether you're based in Galway or anywhere in Ireland, we deliver quality, iconic football jerseys straight to your door. Join us in supporting a circular economy, one jersey at a time!</p>
             <a href="shop.php" class="btn">Start Exploring</a>

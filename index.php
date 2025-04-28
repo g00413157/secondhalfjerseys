@@ -1,3 +1,16 @@
+<?php
+session_start();
+include 'db.php'; 
+
+// Calculate cart count
+$cart_count = 0;
+if (isset($_SESSION['cart_items'])) {
+    foreach ($_SESSION['cart_items'] as $item_info) {
+        $cart_count += $item_info['quantity'];
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +23,6 @@
 </head>
 
 <body>
-    <?php include 'db.php'?>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
@@ -55,7 +67,7 @@
 
 
         <section class="cta">
-            <h2>Join the Second Half Jerseys Community</h2>
+            <h2 class="ctahead">Join the Second Half Jerseys Community</h2>
             <p>Whether you're based in Galway or anywhere in Ireland, we deliver quality, iconic football jerseys straight to your door. Join us in supporting a circular economy, one jersey at a time!</p>
             <a href="shop.php" class="btn">Start Exploring</a>
         </section>
